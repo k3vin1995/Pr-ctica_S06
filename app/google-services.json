@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "978630086689",
-    "project_id": "practicaexamen-b3dad",
-    "storage_bucket": "practicaexamen-b3dad.appspot.com"
+    "project_number": "762299259225",
+    "project_id": "inicio-e607a",
+    "storage_bucket": "inicio-e607a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:978630086689:android:27b7c33483870144c89360",
+        "mobilesdk_app_id": "1:762299259225:android:c262d76eac527ecbb99448",
         "android_client_info": {
           "package_name": "com.inicio"
         }
       },
       "oauth_client": [
         {
-          "client_id": "978630086689-ehv50oioe0fm5tm7gmcdklht35uptjmp.apps.googleusercontent.com",
+          "client_id": "762299259225-3uu8r3mqglap1i0gu87nluvitjhmlb9e.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBv5ZzHPnBQwNJ8cE3t4SaMFCI_gRyej3A"
+          "current_key": "AIzaSyCZ2bciWNCUEKkvNhXli9Nm9Z5jFMKMfIw"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "978630086689-ehv50oioe0fm5tm7gmcdklht35uptjmp.apps.googleusercontent.com",
+              "client_id": "762299259225-3uu8r3mqglap1i0gu87nluvitjhmlb9e.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -8,7 +8,7 @@
     tools:context=".MainActivity" >
 
     <TextView
-        android:id="@+id/tv_correo"
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/tv_correo"
@@ -25,12 +25,11 @@
         android:textSize="24sp" />
 
     <TextView
-        android:id="@+id/tv_clave"
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/tv_clave"
         android:textAlignment="center"
-        android:textAllCaps="false"
         android:textSize="24sp" />
 
     <EditText
@@ -49,15 +48,16 @@
 
         <ImageButton
             android:id="@+id/bt_register"
-            android:layout_width="201dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             app:srcCompat="@drawable/ic_register" />
 
         <ImageButton
             android:id="@+id/bt_login"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             app:srcCompat="@drawable/ic_login" />
     </LinearLayout>
-
 </LinearLayout>
