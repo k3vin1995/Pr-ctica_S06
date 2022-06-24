@@ -41,7 +41,7 @@ class AddEstadoFragment : Fragment() {
         val coordenadas=binding.etCoordenadas.text.toString()
 
         if(nombreEstado.isNotEmpty()) {
-            val estado = Estado(0,nombreEstado,pais,capital,0.0,0.0)
+            val estado = Estado(0,nombreEstado,pais,capital,poblacion.toDouble(),coordenadas.toDouble())
             estadoViewModel.addEstado(estado)
             Toast.makeText(requireContext(),getString(R.string.estadoAdded),Toast.LENGTH_SHORT).show()
             findNavController().navigate(R.id.action_addEstadoFragment_to_nav_estado)

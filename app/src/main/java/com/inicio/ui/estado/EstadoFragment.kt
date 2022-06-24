@@ -11,6 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.inicio.R
+import com.inicio.adapter.EstadoAdapter
 //import com.inicio.adapter.EstadoAdapter
 import com.inicio.databinding.FragmentEstadoBinding
 import com.inicio.viewmodel.EstadoViewModel
@@ -33,17 +34,17 @@ class EstadoFragment : Fragment() {
             findNavController().navigate(R.id.action_nav_estado_to_addEstadoFragment)
         }
 
-//        val estadoAdapter = EstadoAdapter()
+        val estadoAdapter = EstadoAdapter()
         val reciclador = binding.reciclador
 
-//        reciclador.adapter = estadoAdapter
+        reciclador.adapter = estadoAdapter
         reciclador.layoutManager = LinearLayoutManager(requireContext())
 
         estadoViewModel = ViewModelProvider(this)[EstadoViewModel::class.java]
 
-//        estadoViewModel.getAllData.observe(viewLifecycleOwner) {
-//                estados -> estadoAdapter.setData(estados)
-//        }
+        estadoViewModel.getAllData.observe(viewLifecycleOwner) {
+                estados -> estadoAdapter.setData(estados)
+        }
         return binding.root
     }
 
