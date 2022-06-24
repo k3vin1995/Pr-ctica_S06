@@ -32,7 +32,7 @@
     <fragment
         android:id="@+id/addEstadoFragment"
         android:name="com.inicio.ui.estado.AddEstadoFragment"
-        android:label="fragment_add_estado"
+        android:label="@string/bt_agregar"
         tools:layout="@layout/fragment_add_estado" >
         <action
             android:id="@+id/action_addEstadoFragment_to_nav_estado"
@@ -41,7 +41,7 @@
     <fragment
         android:id="@+id/updateEstadoFragment"
         android:name="com.inicio.ui.estado.UpdateEstadoFragment"
-        android:label="fragment_update_estado"
+        android:label="@string/bt_actualizar"
         tools:layout="@layout/fragment_update_estado" >
         <action
             android:id="@+id/action_updateEstadoFragment_to_nav_estado"

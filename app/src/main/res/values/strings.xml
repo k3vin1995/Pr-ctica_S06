@@ -28,4 +28,8 @@
     <string name="bt_agregar">Agregar estado</string>
     <string name="bt_actualizar">Actualizar estado</string>
     <string name="estadoUpdated">Estado Actualizado</string>
+    <string name="delete">Elimina estado</string>
+    <string name="seguroBorrar">"¿Está seguro de eliminar "</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
 </resources>
