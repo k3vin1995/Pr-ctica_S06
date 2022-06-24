@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
     private fun actualiza(user: FirebaseUser?) {
         if (user!=null) {
             // paso a la pantalla principal
-            //val intent = Intent(this,Principal::class.java)
+            //val intent = Intent(this,Central::class.java)
             startActivity(intent)
         }
     }
