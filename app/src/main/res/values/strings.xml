@@ -26,4 +26,6 @@
     <string name="estadoAdded">Estado agregado</string>
     <string name="noData">Faltan datos</string>
     <string name="bt_agregar">Agregar estado</string>
+    <string name="bt_actualizar">Actualizar estado</string>
+    <string name="estadoUpdated">Estado Actualizado</string>
 </resources>

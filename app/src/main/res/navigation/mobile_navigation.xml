@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_nav_estado_to_addEstadoFragment"
             app:destination="@id/addEstadoFragment" />
+        <action
+            android:id="@+id/action_nav_estado_to_updateEstadoFragment"
+            app:destination="@id/updateEstadoFragment" />
     </fragment>
 
     <fragment
@@ -34,5 +37,17 @@
         <action
             android:id="@+id/action_addEstadoFragment_to_nav_estado"
             app:destination="@id/nav_estado" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateEstadoFragment"
+        android:name="com.inicio.ui.estado.UpdateEstadoFragment"
+        android:label="fragment_update_estado"
+        tools:layout="@layout/fragment_update_estado" >
+        <action
+            android:id="@+id/action_updateEstadoFragment_to_nav_estado"
+            app:destination="@id/nav_estado" />
+        <argument
+            android:name="estado"
+            app:argType="com.inicio.model.Estado" />
     </fragment>
 </navigation>

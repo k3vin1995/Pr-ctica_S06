@@ -17,13 +17,13 @@ class EstadoAdapter : RecyclerView.Adapter<EstadoAdapter.EstadoViewHolder>() {
             itemBinding.tvNombreEstado.text = estado.nombreEstado
             itemBinding.tvPais.text = estado.pais
             itemBinding.tvCapital.text = estado.capital
-            itemBinding.tvPoblacion.text = estado.poblacion.toString()
-            itemBinding.tvCoordenadas.text = estado.coordenadas.toString()
+//            itemBinding.tvPoblacion.text = estado.poblacion.toString()
+//            itemBinding.tvCoordenadas.text = estado.coordenadas.toString()
 
-//            itemBinding.vistaFila.setOnClickListener{
-//                val accion = EstadoFragmentDirections.actionNavEstadoToAddEstadoFragment(estado)
-//                itemView.findNavController().navigate(accion)
-//            }
+            itemBinding.vistaFila.setOnClickListener{
+                val accion = EstadoFragmentDirections.actionNavEstadoToUpdateEstadoFragment(estado)
+                itemView.findNavController().navigate(accion)
+            }
         }
 
     }
