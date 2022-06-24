@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "978630086689",
+    "project_id": "practicaexamen-b3dad",
+    "storage_bucket": "practicaexamen-b3dad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978630086689:android:27b7c33483870144c89360",
+        "android_client_info": {
+          "package_name": "com.inicio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "978630086689-ehv50oioe0fm5tm7gmcdklht35uptjmp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv5ZzHPnBQwNJ8cE3t4SaMFCI_gRyej3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "978630086689-ehv50oioe0fm5tm7gmcdklht35uptjmp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
