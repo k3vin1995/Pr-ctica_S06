@@ -4,36 +4,47 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.inicio.R
+//import com.inicio.adapter.EstadoAdapter
 import com.inicio.databinding.FragmentEstadoBinding
 import com.inicio.viewmodel.EstadoViewModel
 
 class EstadoFragment : Fragment() {
 
+    private lateinit var estadoViewModel: EstadoViewModel
     private var _binding: FragmentEstadoBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
+        inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val estadoViewModel =
-            ViewModelProvider(this).get(EstadoViewModel::class.java)
+        estadoViewModel = ViewModelProvider(this)[EstadoViewModel::class.java]
+        _binding = FragmentEstadoBinding.inflate(inflater,container,false)
 
-        _binding = FragmentEstadoBinding.inflate(inflater, container, false)
-        val root: View = binding.root
 
-        val textView: TextView = binding.textHome
-        estadoViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+        binding.addEstadoButton.setOnClickListener{
+            findNavController().navigate(R.id.action_nav_estado_to_addEstadoFragment)
         }
-        return root
+
+//        val estadoAdapter = EstadoAdapter()
+        val reciclador = binding.reciclador
+
+//        reciclador.adapter = estadoAdapter
+        reciclador.layoutManager = LinearLayoutManager(requireContext())
+
+        estadoViewModel = ViewModelProvider(this)[EstadoViewModel::class.java]
+
+//        estadoViewModel.getAllData.observe(viewLifecycleOwner) {
+//                estados -> estadoAdapter.setData(estados)
+//        }
+        return binding.root
     }
 
     override fun onDestroyView() {

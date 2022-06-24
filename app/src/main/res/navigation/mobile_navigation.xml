@@ -9,7 +9,11 @@
         android:id="@+id/nav_estado"
         android:name="com.inicio.ui.estado.EstadoFragment"
         android:label="@string/menu_estado"
-        tools:layout="@layout/fragment_estado" />
+        tools:layout="@layout/fragment_estado" >
+        <action
+            android:id="@+id/action_nav_estado_to_addEstadoFragment"
+            app:destination="@id/addEstadoFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_gallery"
@@ -22,4 +26,13 @@
         android:name="com.inicio.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/addEstadoFragment"
+        android:name="com.inicio.ui.estado.AddEstadoFragment"
+        android:label="fragment_add_estado"
+        tools:layout="@layout/fragment_add_estado" >
+        <action
+            android:id="@+id/action_addEstadoFragment_to_nav_estado"
+            app:destination="@id/nav_estado" />
+    </fragment>
 </navigation>
