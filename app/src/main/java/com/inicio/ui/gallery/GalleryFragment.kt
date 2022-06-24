@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.inicio.databinding.FragmentGalleryBinding
+import com.inicio.viewmodel.GalleryViewModel
 
 class GalleryFragment : Fragment() {
 
